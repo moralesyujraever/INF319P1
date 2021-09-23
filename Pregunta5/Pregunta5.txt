@@ -1,0 +1,13 @@
+open System
+let multi a b=
+    let r =0
+    for i in 1..b do
+        r = r + a
+    r
+[<EntryPoint>]
+let main argv =
+    let c = multi 5 7
+    printfn "multiplicacion 5*7=%i" c
+    Console.ReadKey() |>ignore
+    0
+    
